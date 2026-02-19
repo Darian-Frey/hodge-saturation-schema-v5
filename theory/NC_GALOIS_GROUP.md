@@ -1,15 +1,22 @@
-# Milestone 2: Formalization of {nc}$
+# Proposed Construction: The NC-Motivic Galois Group ($G_{nc}$)
 
-## 1. Group Construction
-The group {nc}$ is the group of all natural transformations of the functor $\omega_{nc}$ that commute with the tensor product. For a K3 surface $, the action of {nc}$ on *(S)$ decomposes into:
-- **Trivial Representation:** Corresponding to the algebraic part (Picard rank).
-- **Transcendental Representation:** Corresponding to $.
+## 1. Conjectural Status
+The existence and structure of the **NC-Motivic Galois Group** ($G_{nc}$) are currently proposed as a theoretical necessity for the Saturation framework. While the classical Mumford-Tate group $MT(X)$ governs the symmetries of classical Hodge structures, $G_{nc}$ is intended to govern the symmetries of the periodic cyclic homology $HP_*(X)$ viewed as a noncommutative Hodge realization.
 
-## 2. Fixed Vector Criterion
-Let  \in \omega_{nc}(X)$ be a vector. The **Fixed-Vector Theorem** (which we aim to prove) states:
-6950v \text{ is } G_{nc}\text{-invariant} \iff v \in \text{Im}(K_0(X) \otimes \mathbb{Q})6950
+## 2. Requirements for Formal Construction
+To move $G_{nc}$ from a "Proposed Construction" to a rigorous mathematical object, the following foundational steps (largely open) must be completed:
+- **Tannakian Neutrality:** Prove that the category of NC-motives $\mathcal{M}_{nc}$, as defined by Kontsevich and Tabuada, can be equipped with a symmetric monoidal structure that allows for a neutral fiber functor $\omega$.
+- **Fiber Functor Definition:** Explicitly define the functor $\omega: \mathcal{M}_{nc} \to \text{Vect}_{\mathbb{Q}}$. Currently, we assume the Existence of $\omega$ based on the analogy with classical motives.
+- **Group Scheme Realization:** Define $G_{nc}$ as $\underline{\text{Aut}}^\otimes(\omega)$.
 
-## 3. Relation to Classical Mumford-Tate Groups
-We posit that there is a surjective map from the NC-Motivic Galois group to the classical Mumford-Tate group:
-6950G_{nc} \twoheadrightarrow MT(X)6950
-This map ensures that our NC-Tannakian results imply classical Hodge results while providing the "Categorical Lift" necessary to bypass torsion.
+## 3. The Fixed-Vector Hypothesis
+The "Fixed-Vector Theorem" presented in this repository should be understood as a **Hypothesis**:
+> **Hypothesis:** If a neutral Tannakian category $\mathcal{M}_{nc}$ exists such that its realization is compatible with $HP_*(X)$, then the invariant vectors under $G_{nc}$ are precisely those in the image of algebraic $K$-theory.
+
+## 4. Relation to Established Research
+This construction seeks to bridge:
+- **Kontsevich/Tabuada:** Noncommutative Motives.
+- **Bakker/Tsimerman:** O-minimal period maps.
+- **Mumford-Tate:** Classical Galois-type symmetries in Hodge theory.
+
+The current "proofs" in this repository simulate the behavior of $G_{nc}$ assuming these foundational properties hold. 
