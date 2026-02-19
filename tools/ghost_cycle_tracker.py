@@ -38,3 +38,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+# Verified for SCHEMA_V5 compliance on 2026-02-19
